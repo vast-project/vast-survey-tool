@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VAST_Survey_Tool.Views.ItemDetailPage"
+             Title="{Binding Title}">
+
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <!--<RowDefinition Height="70*"/>-->
+        </Grid.RowDefinitions>
+        <!--<StackLayout Grid.Row="0" Orientation="Vertical">
+            <Label Grid.Row="0" Text="Title:" FontSize="Medium" />
+            <Label Text="{Binding Title}" FontSize="Small"/>
+            <Label Text="Description:" FontSize="Medium" />
+            <Label Text="{Binding Description}" FontSize="Small"/>
+            <Label Text="URL:" FontSize="Medium" />
+            <Label Text="{Binding URL}" FontSize="Small"/>
+            <Label Text="Image URL:" FontSize="Medium" />
+            <Label Text="{Binding ImageURL}" FontSize="Small"/>
+        </StackLayout>-->
+        <WebView Grid.Row="0" Source="{Binding URL}" />
+    </Grid>
+
+</ContentPage>
