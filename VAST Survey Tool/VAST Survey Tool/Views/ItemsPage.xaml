@@ -36,8 +36,8 @@
                             <StackLayout Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" >
                                 <!--<Image Aspect="AspectFit" WidthRequest="100" Source="{Binding ImageURL}" />-->
                             </StackLayout>
-                            <Label Grid.Column="1" Grid.Row="0" Text="{Binding Title}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
-                            <Label Grid.Column="1" Grid.Row="1" Text="{Binding Description}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
+                            <Label Grid.Column="1" Grid.Row="0" Text="{Binding Title}" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
+                            <Label Grid.Column="1" Grid.Row="1" Text="{Binding Description}" LineBreakMode="WordWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
                             <!--<WebView HeightRequest="40">
                             <WebView.Source>
                                 <HtmlWebViewSource Html="{Binding Description}"/>
