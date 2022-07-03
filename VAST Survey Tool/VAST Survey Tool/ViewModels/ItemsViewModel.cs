@@ -20,7 +20,7 @@ namespace VAST_Survey_Tool.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "Ερωτηματολόγια";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
@@ -85,7 +85,7 @@ namespace VAST_Survey_Tool.ViewModels
         }
         private async void onRefreshItems(object obj)
         {
-            await Shell.Current.GoToAsync(nameof(NewItemPage));
+            await Shell.Current.GoToAsync("//ItemsPage");
         }
 
     }
