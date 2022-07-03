@@ -7,24 +7,93 @@
     -->
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="PrimaryVAST">#7bdcb5</Color>
+            <Color x:Key="TransparentColor">Transparent</Color>
+
+            <!-- Light colors -->
+            <Color x:Key="LightPageBackgroundColor">White</Color>
+            <Color x:Key="LightNavigationBarColor">#2196F3</Color>
+            <Color x:Key="LightPrimaryColor">#2196F3</Color>
+            <Color x:Key="LightPrimaryColorDisabled">#332196F3</Color>
+            <Color x:Key="LightPrimaryAccentColor">#96d1ff</Color>
+            <Color x:Key="LightSecondaryColor">White</Color>
+            <Color x:Key="LightPrimaryTextColor">Black</Color>
+            <Color x:Key="LightSecondaryTextColor">White</Color>
+            <Color x:Key="LightTertiaryTextColor">Gray</Color>
+
+            <!-- Dark colors -->
+            <Color x:Key="DarkPageBackgroundColor">Black</Color>
+            <Color x:Key="DarkNavigationBarColor">Teal</Color>
+            <Color x:Key="DarkPrimaryColor">Teal</Color>
+            <Color x:Key="DarkPrimaryColorDisabled">#332196F3</Color>
+            <Color x:Key="DarkPrimaryAccentColor">#66B3B3</Color>
+            <Color x:Key="DarkSecondaryColor">White</Color>
+            <Color x:Key="DarkPrimaryTextColor">White</Color>
+            <Color x:Key="DarkSecondaryTextColor">White</Color>
+            <Color x:Key="DarkTertiaryTextColor">WhiteSmoke</Color>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor"
+                    Value="{AppThemeBinding Light={StaticResource LightNavigationBarColor}, Dark={StaticResource DarkNavigationBarColor}}" />
+                <Setter Property="BarTextColor"
+                    Value="{AppThemeBinding Light={StaticResource LightSecondaryColor}, Dark={StaticResource DarkSecondaryColor}}" />
+            </Style>
+
+            <Style x:Key="ButtonStyle"
+               TargetType="Button">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Light={StaticResource LightPrimaryColor}, Dark={StaticResource DarkPrimaryColor}}" />
+                <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource LightSecondaryColor}, Dark={StaticResource DarkSecondaryColor}}" />
+                <Setter Property="HeightRequest"
+                    Value="45" />
+                <Setter Property="WidthRequest"
+                    Value="190" />
+                <Setter Property="CornerRadius"
+                    Value="18" />
+            </Style>
+
+            <Style x:Key="LargeLabelStyle"
+               TargetType="Label">
+                <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource LightSecondaryTextColor}, Dark={StaticResource DarkSecondaryTextColor}}" />
+                <Setter Property="FontSize"
+                    Value="30" />
+            </Style>
+
+            <Style x:Key="MediumLabelStyle"
+               TargetType="Label">
+                <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+                <Setter Property="FontSize"
+                    Value="25" />
+            </Style>
+
+            <Style x:Key="SmallLabelStyle"
+               TargetType="Label">
+                <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource LightTertiaryTextColor}, Dark={StaticResource DarkTertiaryTextColor}}" />
+                <Setter Property="FontSize"
+                    Value="15" />
+            </Style>
+                     
+            <!--<Color x:Key="PrimaryVAST">#7bdcb5</Color>
             <Color x:Key="PrimaryVASTDisabled">#fff</Color>
             <Color x:Key="Primary">#2196F3</Color>
-            <Color x:Key="PrimaryDisabled">#332196F3</Color>
+            <Color x:Key="PrimaryDisabled">#332196F3</Color>-->
+            
             <Style TargetType="Button">
-                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightSecondaryColor}, Dark={StaticResource DarkSecondaryColor}}"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-
-                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryColor}, Dark={StaticResource DarkPrimaryColor}}" />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Disabled">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="{StaticResource PrimaryDisabled}" />
+                                    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryColorDisabled}, Dark={StaticResource DarkPrimaryColorDisabled}}" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>

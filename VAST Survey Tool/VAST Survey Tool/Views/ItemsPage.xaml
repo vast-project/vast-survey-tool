@@ -6,10 +6,11 @@
              xmlns:local="clr-namespace:VAST_Survey_Tool.ViewModels"  
              xmlns:model="clr-namespace:VAST_Survey_Tool.Models"
              xmlns:resources="clr-namespace:VAST_Survey_Tool.Resx"
-             x:Name="BrowseItemsPage">
+             x:Name="BrowseItemsPage"
+             BackgroundColor="{AppThemeBinding Light={StaticResource LightPageBackgroundColor}, Dark={StaticResource DarkPageBackgroundColor}}">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="{x:Static resources:AppResources.Refresh}" Command="{Binding RefreshItemsCommand}" />
+        <!--<ToolbarItem Text="{x:Static resources:AppResources.Refresh}" Command="{Binding RefreshItemsCommand}" />-->
         <!--<ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />-->
     </ContentPage.ToolbarItems>
     <!--
