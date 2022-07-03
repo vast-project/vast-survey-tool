@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using VAST_Survey_Tool.Models;
+using VAST_Survey_Tool.Resx;
 using VAST_Survey_Tool.Views;
 using Xamarin.Forms;
 
@@ -20,7 +21,7 @@ namespace VAST_Survey_Tool.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Ερωτηματολόγια";
+            Title = AppResources.Browse;
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

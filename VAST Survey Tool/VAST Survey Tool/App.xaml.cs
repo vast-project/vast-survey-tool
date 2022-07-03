@@ -1,8 +1,5 @@
-﻿using System;
-using VAST_Survey_Tool.Services;
-using VAST_Survey_Tool.Views;
+﻿using VAST_Survey_Tool.Services;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace VAST_Survey_Tool
 {

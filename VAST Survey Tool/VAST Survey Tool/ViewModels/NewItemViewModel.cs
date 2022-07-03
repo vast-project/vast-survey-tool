@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Input;
 using VAST_Survey_Tool.Models;
 using Xamarin.Forms;
 

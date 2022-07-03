@@ -1,5 +1,5 @@
-﻿using System;
-using System.Windows.Input;
+﻿using System.Windows.Input;
+using VAST_Survey_Tool.Resx;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -9,7 +9,7 @@ namespace VAST_Survey_Tool.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "Πληροφορίες";
+            Title = AppResources.About;
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
 

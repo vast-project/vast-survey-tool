@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace VAST_Survey_Tool.Models
+﻿namespace VAST_Survey_Tool.Models
 {
     public class Item
     {

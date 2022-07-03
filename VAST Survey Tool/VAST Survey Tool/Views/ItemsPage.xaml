@@ -4,11 +4,12 @@
              x:Class="VAST_Survey_Tool.Views.ItemsPage"
              Title="{Binding Title}"
              xmlns:local="clr-namespace:VAST_Survey_Tool.ViewModels"  
-             xmlns:model="clr-namespace:VAST_Survey_Tool.Models"  
+             xmlns:model="clr-namespace:VAST_Survey_Tool.Models"
+             xmlns:resources="clr-namespace:VAST_Survey_Tool.Resx"
              x:Name="BrowseItemsPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Refresh" Command="{Binding RefreshItemsCommand}" />
+        <ToolbarItem Text="{x:Static resources:AppResources.Refresh}" Command="{Binding RefreshItemsCommand}" />
         <!--<ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />-->
     </ContentPage.ToolbarItems>
     <!--

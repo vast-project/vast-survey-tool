@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VAST_Survey_Tool.Models;
-using VAST_Survey_Tool.ViewModels;
-using VAST_Survey_Tool.Views;
+﻿using VAST_Survey_Tool.ViewModels;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace VAST_Survey_Tool.Views
 {

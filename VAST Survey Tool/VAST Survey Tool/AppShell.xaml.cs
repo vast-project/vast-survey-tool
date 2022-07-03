@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using VAST_Survey_Tool.ViewModels;
 using VAST_Survey_Tool.Views;
 using Xamarin.Forms;
 

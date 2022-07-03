@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
 using VAST_Survey_Tool.Models;
-using VAST_Survey_Tool.Models.Post;
 using VAST_Survey_Tool.Models.Media;
-
-using System.Net.Http;
+using VAST_Survey_Tool.Models.Post;
 using Xamarin.Essentials;
-using System.Text.Json;
-using System.Diagnostics;
 
 namespace VAST_Survey_Tool.Services
 {
@@ -110,7 +109,7 @@ namespace VAST_Survey_Tool.Services
                 {
                     // Getting JSON data from the Web
                     var content = await _client.GetStringAsync(_url);
-                    
+
                     // We deserialize the JSON data
                     var posts = JsonSerializer.Deserialize<List<Post>>(content);
                     // Convert posts to items...
