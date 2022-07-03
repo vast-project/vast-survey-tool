@@ -114,5 +114,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\vast_logo.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\drawable\vast_logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
