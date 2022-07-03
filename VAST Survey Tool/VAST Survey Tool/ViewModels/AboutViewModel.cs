@@ -10,7 +10,7 @@ namespace VAST_Survey_Tool.ViewModels
         public AboutViewModel()
         {
             Title = AppResources.About;
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
+            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://www.vast-project.eu/"));
         }
 
         public ICommand OpenWebCommand { get; }

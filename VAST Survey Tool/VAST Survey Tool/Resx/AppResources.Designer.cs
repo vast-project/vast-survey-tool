@@ -86,5 +86,23 @@ namespace VAST_Survey_Tool.Resx {
                 return ResourceManager.GetString("Refresh", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The VAST Project: Values Across Space &amp; Time.
+        /// </summary>
+        public static string TheVASTProject_ValuesAcrossSpaceAndTime {
+            get {
+                return ResourceManager.GetString("TheVASTProject_ValuesAcrossSpaceAndTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The VAST Project aims to study the transformation of fundamental (moral) values across space and time and bring them to the forefront of advanced digitisation!.
+        /// </summary>
+        public static string VASTShortIntro {
+            get {
+                return ResourceManager.GetString("VASTShortIntro", resourceCulture);
+            }
+        }
     }
 }
