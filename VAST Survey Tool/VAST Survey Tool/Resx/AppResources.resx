@@ -123,11 +123,23 @@
   <data name="Browse" xml:space="preserve">
     <value>Browse</value>
   </data>
+  <data name="EUDeclaration" xml:space="preserve">
+    <value>This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 101004949. The content in this application reflects only the view of the authors and the European Commission is not responsible for any use that may be made of the information it contains.</value>
+  </data>
+  <data name="LearnMore" xml:space="preserve">
+    <value>Learn more</value>
+  </data>
+  <data name="LearnMoreAt" xml:space="preserve">
+    <value>Learn more at</value>
+  </data>
   <data name="Refresh" xml:space="preserve">
     <value>Refresh</value>
   </data>
   <data name="TheVASTProject_ValuesAcrossSpaceAndTime" xml:space="preserve">
     <value>The VAST Project: Values Across Space &amp; Time</value>
+  </data>
+  <data name="VASTHomeURL" xml:space="preserve">
+    <value>https://www.vast-project.eu/</value>
   </data>
   <data name="VASTShortIntro" xml:space="preserve">
     <value>The VAST Project aims to study the transformation of fundamental (moral) values across space and time and bring them to the forefront of advanced digitisation!</value>

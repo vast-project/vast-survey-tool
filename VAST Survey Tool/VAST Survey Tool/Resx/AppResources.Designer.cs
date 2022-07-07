@@ -79,6 +79,33 @@ namespace VAST_Survey_Tool.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This project has received funding from the European Union&apos;s Horizon 2020 research and innovation programme under grant agreement No 101004949. The content in this application reflects only the view of the authors and the European Commission is not responsible for any use that may be made of the information it contains..
+        /// </summary>
+        public static string EUDeclaration {
+            get {
+                return ResourceManager.GetString("EUDeclaration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Learn more.
+        /// </summary>
+        public static string LearnMore {
+            get {
+                return ResourceManager.GetString("LearnMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Learn more at.
+        /// </summary>
+        public static string LearnMoreAt {
+            get {
+                return ResourceManager.GetString("LearnMoreAt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Refresh.
         /// </summary>
         public static string Refresh {
@@ -93,6 +120,15 @@ namespace VAST_Survey_Tool.Resx {
         public static string TheVASTProject_ValuesAcrossSpaceAndTime {
             get {
                 return ResourceManager.GetString("TheVASTProject_ValuesAcrossSpaceAndTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://www.vast-project.eu/.
+        /// </summary>
+        public static string VASTHomeURL {
+            get {
+                return ResourceManager.GetString("VASTHomeURL", resourceCulture);
             }
         }
         

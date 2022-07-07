@@ -44,16 +44,28 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Learn more at "/>
-                                <Span Text="https://www.vast-project.eu/" FontAttributes="Bold"/>
+                                <Span Text="{x:Static resources:AppResources.LearnMoreAt}"/>
+                                <Span Text=" "/>
+                                <Span Text="{x:Static resources:AppResources.VASTHomeURL}" FontAttributes="Bold"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Button Margin="0,10,0,0" Text="Learn more"
+                <Button Margin="0,10,0,0" Text="{x:Static resources:AppResources.LearnMore}"
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="{AppThemeBinding Light={StaticResource LightPrimaryColor}, Dark={StaticResource DarkPrimaryColor}}"
                         TextColor="{AppThemeBinding Light={StaticResource LightSecondaryColor}, Dark={StaticResource DarkSecondaryColor}}" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="80*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="{AppThemeBinding Light=eu_flag.png, Dark=eu_flag.png}" VerticalOptions="Center" HeightRequest="76" />
+                    <Label Grid.Column="1" Grid.Row="0" Text="{x:Static resources:AppResources.EUDeclaration}" FontSize="10"/>     
+                </Grid>
             </StackLayout>
         </ScrollView>
     </Grid>
