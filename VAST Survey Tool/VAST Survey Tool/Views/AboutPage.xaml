@@ -38,9 +38,9 @@
         </StackLayout>
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="{x:Static resources:AppResources.TheVASTProject_ValuesAcrossSpaceAndTime}" FontSize="Title"/>
-                <Label Text="{x:Static resources:AppResources.VASTShortIntro}" FontSize="16" Padding="0,0,0,0"/>
-                <Label FontSize="16" Padding="0,24,0,0">
+                <Label Text="{x:Static resources:AppResources.TheVASTProject_ValuesAcrossSpaceAndTime}" HorizontalTextAlignment="Center" FontSize="Title"/>
+                <Label Text="{x:Static resources:AppResources.VASTShortIntro}" FontSize="Subtitle" Padding="0,0,0,0" HorizontalTextAlignment="Center" />
+                <Label FontSize="16" Padding="0,24,0,0" HorizontalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
