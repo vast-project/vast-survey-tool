@@ -9,6 +9,7 @@ namespace VAST_Survey_Tool.ViewModels
     {
         private string itemId;
         private string title;
+        private string titleDecoded;
         private string description;
         private string url;
         private string imageURL;
@@ -18,6 +19,12 @@ namespace VAST_Survey_Tool.ViewModels
         {
             get => title;
             set => SetProperty(ref title, value);
+        }
+
+        public new string TitleDecoded
+        {
+            get => titleDecoded;
+            set => SetProperty(ref titleDecoded, value);
         }
 
         public string Description
@@ -58,6 +65,7 @@ namespace VAST_Survey_Tool.ViewModels
                 var item = await DataStore.GetItemAsync(itemId);
                 Id = item.Id;
                 Title = item.Title;
+                TitleDecoded = item.TitleDecoded;
                 Description = item.Description;
                 ImageURL = item.ImageURL;
                 URL = item.URL;

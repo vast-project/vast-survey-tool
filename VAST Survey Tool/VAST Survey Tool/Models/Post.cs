@@ -75,6 +75,17 @@ namespace VAST_Survey_Tool.Models.Post
         public bool inline_featured_image { get; set; }
     }
 
+    public class PostMetaFields
+    {
+        public List<string> _edit_lock { get; set; }
+        public List<string> _edit_last { get; set; }
+        public List<string> fifu_image_url { get; set; }
+        public List<string> _thumbnail_id { get; set; }
+        public List<string> wpforms_conversationalform_url { get; set; }
+        public List<string> _pingme { get; set; }
+        public List<string> _encloseme { get; set; }
+    }
+
     public class PredecessorVersion
     {
         public int id { get; set; }
@@ -112,6 +123,8 @@ namespace VAST_Survey_Tool.Models.Post
         public Meta meta { get; set; }
         public List<int> categories { get; set; }
         public List<object> tags { get; set; }
+        [JsonPropertyName("post-meta-fields")]
+        public PostMetaFields PostMetaFields { get; set; }
         public Links _links { get; set; }
     }
 
@@ -133,6 +146,12 @@ namespace VAST_Survey_Tool.Models.Post
 
     public class WpAttachment
     {
+        public string href { get; set; }
+    }
+
+    public class WpFeaturedmedium
+    {
+        public bool embeddable { get; set; }
         public string href { get; set; }
     }
 
