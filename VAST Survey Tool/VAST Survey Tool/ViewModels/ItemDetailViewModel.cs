@@ -21,7 +21,7 @@ namespace VAST_Survey_Tool.ViewModels
             set => SetProperty(ref title, value);
         }
 
-        public new string TitleDecoded
+        public string TitleDecoded
         {
             get => titleDecoded;
             set => SetProperty(ref titleDecoded, value);
